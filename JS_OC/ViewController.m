@@ -34,6 +34,13 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
     [self.view addSubview:webView];
+    
+    
+    /*
+     JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+     NSString *textJS = @"showAlert('调用js')";，将showAlert定义成js的function即可
+     [context evaluateScript:textJS];
+     */
 }
 
 #pragma mark - UIWebViewDelegate
