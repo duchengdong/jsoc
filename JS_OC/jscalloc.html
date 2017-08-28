@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+    
+<h1>OC-JS</h1>
+
+<div>
+<input type="button" value="方法一" onclick="callShare()">
+<input type="button" value="方法二" onclick="callShare2()">
+</div>
+
+<script>
+<!--   方法一 -->
+   function callShare() {
+      
+      var shareInfo = JSON.stringify({"title": "JSCallOC"});
+      alert(shareInfo);
+      
+      resultForApp.share(shareInfo)
+      
+   }
+<!--   方法二 -->
+ function callShare2() {
+     alert('222');
+    share('参数1','参数2','参数3');
+    
+    
+ }
+
+</script>
+</body>
+</html>
+
+<!--js调用oc方法一：-->
+<!--<html>-->
+<!--    <header>-->
+<!--        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--        <script type="text/javascript">-->
+<!--            -->
+<!--            function secondClick() {-->
+<!--                share('参数1','参数2','参数3');-->
+<!--            }-->
+<!--        -->
+<!--        function showAlert(message){-->
+<!--            alert(message);-->
+<!--        }-->
+<!--        -->
+<!--            </script>-->
+<!--    </header>-->
+<!--    -->
+<!--    <body>-->
+<!--        <h2> js调用oc方法一 </h2>-->
+<!--        <br/>-->
+<!--        <br/>-->
+<!--        <button type="button" onclick="secondClick()">Click Me!</button>-->
+<!--        -->
+<!--    </body>-->
+<!--</html>-->
+
+
